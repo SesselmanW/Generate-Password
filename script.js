@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+
 function generatePassword() {
 
     var lowerCaseChoice;
@@ -103,19 +104,17 @@ function generatePassword() {
 // Let's log the new array to double check!
     console.log(combinedChoice);
 
+
+//!Creation of the Password
+
+    var passwordString = "";
+    for(var i = 0; i < passwordLength; i++) {
+       var randomIndex = Math.floor(Math.random() * combinedChoice.length);
+        passwordString = passwordString + combinedChoice[randomIndex];
     }
-//!Creation of the Password STILL NEED TO WORK ON
-//! if I un-note the code below, the button will no longer work. 
-    // var passwordString = "";
-    // for(var i = 0; i < passwordLength.length; i++) {
-    //     console.log(passwordLength.length);
-    //    var randomIndex = Math.floor(math.random() * combinedChoice.length);
-    //     passwordString = passwordString + combinedChoice[randomIndex];
-    // }
-    // return passwordString
+    return passwordString
 
-
-// }
+ }
 
 // Write password to the #password input
 function writePassword() {
