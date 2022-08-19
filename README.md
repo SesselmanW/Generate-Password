@@ -7,7 +7,7 @@ The webpage will create a unique/random password for you between 8-128 character
 
 ## Installation
 
-N/A, feel free to visit the site at: 
+N/A, feel free to visit the site at: https://sesselmanw.github.io/Generate-Password/
 
 ## Usage
 
